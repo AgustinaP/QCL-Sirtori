@@ -7,7 +7,7 @@ This repository contains a python script to create the structures in the correct
 
 ## About the solver 
 The modeling of heterostructures involves several parameters. Some of them define the structure design, such as the materials and the width of each layer. There are other parameters such as material characteristics, common to all heterostructures (like their gap). In addition, there are environmental parameters, where the heterostructure lies (for example temperature and electric field) which modify the result.
-There are 3 files entry types:
+There are 3 entry files types:
 - Structure file
 - Matirial file 
 - Options file 
