@@ -11,7 +11,9 @@ There are 3 files entry types:
 - Structure file
 - Matirial file 
 - Options file 
+
 All of them are JSON type (with comments) and important labels are defined in defin.hpp.
+
 The electronic state calculus formulated on in envelop function method and their implementation is based on finite difference method.
 There are two solvers that are based in two different structure band model:
 - P1b Model: Parabolic model of 1 band.
