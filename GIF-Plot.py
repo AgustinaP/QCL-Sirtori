@@ -16,33 +16,6 @@ rcParams['font.sans-serif'] = ['DejaVu Sans']
 rcParams['font.size'] = 14
 hc = 4.135667696e-15*3e8 #eV m
 
-
-# e2b-p1b-3p-emision from txt
-#energias_p1b = np.loadtxt('e2b-p1b-3p-emision.txt')
-
-#### Grafico la emisión de p1b y e2b ####
-'''
-plt.scatter(energias_p1b[:,0],energias_p1b[:,1],label='p1b')
-plt.scatter(energias_p1b[:,0],energias_p1b[:,2],label='e2b')
-plt.legend()
-plt.xlabel('Campo eléctrico [kV/cm]')
-plt.ylabel(r'$\Delta$Energia [eV]')
-plt.tick_params(axis='both',direction='in')
-plt.savefig('e2b-p1b-3p-emision.pdf',bbox_inches='tight')
-plt.show()
-'''
-### Grafico longitud de onda p1b y e2b ###
-'''
-plt.scatter(energias_p1b[:,0],hc/energias_p1b[:,1]*1e8,label='p1b')
-plt.scatter(energias_p1b[:,0],hc/energias_p1b[:,2]*1e8,label='e2b')
-plt.legend()
-plt.xlabel('Campo eléctrico [kV/cm]')
-plt.ylabel(r'Longitud de onda [nm]')
-plt.tick_params(axis='both',direction='in')
-plt.savefig('e2b-p1b-3p-longitud.pdf',bbox_inches='tight')
-plt.show()
-'''
-
 ### load pozo ###
 with open('pozo.pkl', 'rb') as f:
     z,conduction_band_profile = pickle.load(f)
@@ -50,11 +23,6 @@ with open('pozo.pkl', 'rb') as f:
 ### Electric field in kV/cm ###
 EF_ = 44
 TEMPERATURE = np.arange(5, 120, 5)
-
-
-### Load relevant energies e2b p1b ###
-
-#energias_p1b_e2b = np.array([np.loadtxt('e2b-p1b-3p-'+str(EF_[n])+'.txt') for n in range(len(EF_))])
 
 print("p1b")
 ### Grafico la emisión de p1b para distintos T ###
