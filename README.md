@@ -2,7 +2,7 @@
 
 Some simulation files of Sirtori Article about QCL around 11 um (10.1051/bib-sfo:2002057). 
 
-We change some parameters such as length(L), width(W), electric field(EF), and temperature(T) around the QCL described in the article. 
+We change some parameters such as length(L), width(W), number of periods(P), electric field(EF), and temperature(T) around the QCL described in the article. 
 This repository contains a python script to create the structures in the correct format and another to solve those structures. Moreover, I include two programs to graph results, one to make a gif with the most significant wavefunction and their respective structure. The other one contains a graph of ΔE and Δλ. 
 
 
